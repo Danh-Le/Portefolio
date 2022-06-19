@@ -1,0 +1,219 @@
+/* font-family: 'Fredoka One', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Spectral', serif; */
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+/* header */
+header{
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    border-bottom: 1px solid black;
+    background-color: rgb(125, 125, 125);
+    position: fixed;
+    width: 100%;
+}
+.top h3{
+    padding-top: 13px;
+}
+.profil{
+    display: flex;
+    flex-direction: column;
+    padding: 80px 70px;
+    background-position: center;
+    background-size: 100%;
+    font-family: 'Pacifico', cursive;
+    background-image: radial-gradient( rgb(181, 180, 180), rgba(155, 152, 152, 0.5)), url("Images/homer.gif");
+}
+h1{
+    font-size: 70px;
+    text-align: center;
+    padding: 30px 0px;
+    font-family: 'Fredoka One', cursive;
+}
+h3{
+    font-size: 40px;
+    padding-left: 30px;
+    font-family: 'Fredoka One', cursive;
+}
+.description{
+    display: flex;
+    padding: 30px 20px;
+}
+.who{
+    display: flex;
+    padding: 0px 30px 30px 30px;
+}
+.who p{
+    text-align: justify;
+    padding: 0px 60px;
+}
+
+/* main */
+main{
+    display: flex;
+    flex-direction: column;
+}
+.ml2 {
+    font-weight: 1000;
+    font-size: 20px;
+    word-spacing: 200%;
+}
+  .ml2 .letter {
+    display: inline-block;
+    line-height: 150%;
+}
+.ml4 {
+    /* position: relative; */
+    font-weight: 900;
+    font-size: 40px;
+  }
+  .ml4 .letters {
+    margin: auto;
+    left: 0;
+    top: 0.3em;
+    right: 0;
+    opacity: 0; 
+  }
+#competences{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 100px 50px;
+}
+.menu{
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 40px;
+    background-color: rgb(99, 98, 98);
+}
+.ancre{
+    text-decoration: none;
+    color: rgb(232, 231, 231);
+    font-size: 25px;
+    line-height: 200%;
+    font-family: 'Spectral', serif;
+}
+h2{
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.technoskills{
+    display: flex;
+    flex-direction: column;
+}
+.technoskills article{
+    text-align: center;
+    padding: 20px 0px;
+}
+h4{
+    text-align: center;
+    font-family: 'Spectral', serif;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 300%;
+}
+#projets{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 100px 50px;
+}
+#projets h2{
+    color: white;
+}
+.lienprojet{
+    display: flex;
+    justify-content: space-between;
+}
+h5{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: 'Fredoka One', cursive;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(139, 138, 138);
+    padding: 100px 30px;
+}
+.alllinks{
+    display: flex;
+    justify-content: space-around;
+}
+h5{
+    line-height: 150%;
+}
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px;
+    border-radius: 20px;
+}
+.formulaire input{
+    border-radius: 10px;
+}
+.formulaire textarea{
+    border-radius: 10px;
+}
+.coordonnees a{
+    color: rgb(207, 206, 206);
+    text-decoration: none;
+}
+.infosperso{
+    line-height: 30px;
+}
+.valid{
+
+    border-radius: 20px;
+    color: rgb(211, 209, 209)
+    background-color: rgb(87, 87, 87);
+    border: 1px solid black;
+}
+
+/* footer */
+footer{
+    display: flex;
+    background-color: rgb(75, 73, 73);
+    padding: 10px 0px;
+    justify-content: space-around
+}
+
+/* Version mobile */
+@media (max-width: 778px){
+    .menu{
+        display: none;
+    }
+    .top h3{
+        display: none;
+    }
+    .who{
+        flex-direction: column;
+        padding: 5px 5px;
+    }
+    .profil{
+        padding: 60px 0px;
+    }
+    .imgicon{
+        width: 200px;
+    }
+    .description{
+        padding: 0px 0px;
+    }
+    .lienprojet{
+        flex-direction: column;
+    }
+    .alllinks{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
